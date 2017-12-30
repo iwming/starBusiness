@@ -25,24 +25,14 @@ int  num = 10;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-//    [self useNSLock];
-    
-//    [self useConditionLock];
-    
-      [self useSemphore];
-    
-
 }
 
 - (void)testFunc
 {
-    
     NSLog(@"viewcontroller");
     
 }
-
-- (void)useNSLock
+- (IBAction)useNSLock:(id)sender
 {
     self.lock = [[NSLock alloc] init];
     self.leftMoney = 100;
@@ -67,8 +57,7 @@ int  num = 10;
     [self.lock unlock];
 }
 
-- (void)useConditionLock
-{
+- (IBAction)useConditionLock:(id)sender {
     self.conditionlLock = [[NSConditionLock alloc] initWithCondition:1];
     self.leftMoney = 0;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -105,16 +94,16 @@ int  num = 10;
     NSLog(@"takeMoney end");
     [self.conditionlLock unlockWithCondition:1];
     
+    
 }
 
-- (void)useSemphore
-{
+- (IBAction)useSemaphore:(id)sender {
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         //阻塞
         dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
         NSLog(@"begin task 1");
-        sleep(10);
+        sleep(5);
         //释放
         dispatch_semaphore_signal(semaphore);
     });

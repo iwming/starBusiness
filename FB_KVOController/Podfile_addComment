@@ -1,0 +1,4 @@
+
+target :FB_KVOController do
+  pod 'KVOController'
+end
