@@ -16,6 +16,17 @@
 
 }
 
+- (void)test
+{
+    NSLog(@"void test");
+}
+
+- (void)call
+{
+    [(TestObject *)self test];
+}
+
+
 - (void)doStrong
 {
     SonObject *objnew = [SonObject new];\

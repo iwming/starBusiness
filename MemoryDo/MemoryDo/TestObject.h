@@ -12,4 +12,7 @@
 
 @property (nonatomic, weak) NSString *weakString;
 
+- (id)test;
+
+
 @end

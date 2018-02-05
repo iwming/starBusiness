@@ -109,14 +109,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    TestObject *obj = [[TestObject alloc] init];
+//    TestObject *obj = [[TestObject alloc] init];
 //    TestObject *obj = [TestObject new];
 //    [obj mutableCopy];
     
-//    [SonObject new];
+   SonObject *son = [SonObject new];
     
-    
+   [(TestObject *)son test];
+   [son test];
+
     
     
     return;

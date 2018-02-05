@@ -37,6 +37,9 @@ void uncaughtExceptionHandler(NSException *exception)
     // Override point for customization after application launch.
     
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    
+    [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+    
     return YES;
 }
 

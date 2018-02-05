@@ -11,6 +11,12 @@
 @implementation TestObject
 
 
+- (id)test
+{
+    NSLog(@"id test");
+    return @"abc";
+}
+
 - (instancetype)init
 {
     self = [super init];

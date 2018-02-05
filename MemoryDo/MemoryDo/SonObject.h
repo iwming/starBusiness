@@ -12,4 +12,7 @@
 
 @property (nonatomic, strong) SonObject *obj;
 
+- (void)test;
+
+- (void)call;
 @end

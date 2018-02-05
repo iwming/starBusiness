@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DCD1DFF20106847000F751B /* BlockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD1DFE20106847000F751B /* BlockObject.m */; };
 		0DF204DD1FFCAC81009C912E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF204DC1FFCAC81009C912E /* AppDelegate.m */; };
 		0DF204E01FFCAC81009C912E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF204DF1FFCAC81009C912E /* ViewController.m */; };
 		0DF204E31FFCAC81009C912E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DF204E11FFCAC81009C912E /* Main.storyboard */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DCD1DFD20106847000F751B /* BlockObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockObject.h; sourceTree = "<group>"; };
+		0DCD1DFE20106847000F751B /* BlockObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockObject.m; sourceTree = "<group>"; };
 		0DF204D81FFCAC81009C912E /* MemoryDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DF204DB1FFCAC81009C912E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0DF204DC1FFCAC81009C912E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 				0DF204F21FFCACEE009C912E /* TestObject.m */,
 				0DF204F41FFE4B92009C912E /* SonObject.h */,
 				0DF204F51FFE4B92009C912E /* SonObject.m */,
+				0DCD1DFD20106847000F751B /* BlockObject.h */,
+				0DCD1DFE20106847000F751B /* BlockObject.m */,
 				0DF204E11FFCAC81009C912E /* Main.storyboard */,
 				0DF204E41FFCAC81009C912E /* Assets.xcassets */,
 				0DF204E61FFCAC81009C912E /* LaunchScreen.storyboard */,
@@ -173,6 +178,7 @@
 				0DF204F91FFF51E1009C912E /* CustomOperation.m in Sources */,
 				0DF204EB1FFCAC81009C912E /* main.m in Sources */,
 				0DF204F31FFCACEE009C912E /* TestObject.m in Sources */,
+				0DCD1DFF20106847000F751B /* BlockObject.m in Sources */,
 				0DF204FC1FFF6477009C912E /* ConcurrentOperation.m in Sources */,
 				0DF204DD1FFCAC81009C912E /* AppDelegate.m in Sources */,
 			);
